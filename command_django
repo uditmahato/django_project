@@ -1,0 +1,51 @@
+django-admin startproject projectname.py
+
+python manage.py  runserver
+
+manage.py is utility file which helps us to send command to the file
+
+db.sqlite3 is default databse
+
+init is backward compatiility to support our proham in older version of python
+
+asgi and wsgi is used to deploy our website on serverurl shows direction to difefferent pages
+
+modular structure divides our task in parts 
+
+each app has its own feature
+
+app provides usable features
+
+django-admin startapp auth
+
+now register the app in settings.py
+
+
+
+###MVT design pattern we will follow(mvc in csharp)
+
+M=model
+V=vew(LOGICS,python methods,is collection of functions)
+T=Tempelate(HTM CODE AND FRONT END)
+
+
+Urls.py ----sends data(module)--->views------>models
+        -----receives-------------views<-----tempalte
+        
+        
+function based views
+class based views
+
+
+steps
+----------
+
+CReate a project
+create the app
+Register the app
+
+
+good way
+---------
+In every app you add url.py
+
