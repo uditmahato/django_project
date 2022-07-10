@@ -21,7 +21,6 @@ django-admin startapp auth
 now register the app in settings.py
 
 
-
 ###MVT design pattern we will follow(mvc in csharp)
 
 M=model
@@ -47,5 +46,5 @@ Register the app
 
 good way
 ---------
-In every app you add url.py
+
 
