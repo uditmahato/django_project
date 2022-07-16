@@ -6,3 +6,5 @@ class about(models.Model):
     last_name = models.CharField(max_length=100)
     email = models.EmailField()
     phone = models.CharField(max_length=100)
+    def __str__(self):
+        return self.first_name +' '+self.last_name +' '+self.email +' '+self.phone
