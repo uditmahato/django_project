@@ -9,3 +9,5 @@ class Booking(models.Model):
     time = models.TimeField()
     people = models.IntegerField()
     message = models.TextField()
+    def __str__(self):
+        return self.email
