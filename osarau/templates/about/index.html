@@ -1,3 +1,20 @@
 {% extends 'core/base.html' %}
 {% block title %} About {% endblock title %}
-{% block content %}Hi,HERE WE OFFER THE SERVICE FOR BOOKING VEHICLE{% endblock content %}
+<!-- {% block content %}Hi,HERE WE OFFER THE SERVICE FOR BOOKING VEHICLE{% endblock content %} -->
+<!--create a form-->
+{% block content %}
+<form action="#" method="post">
+<div class="form-group">
+<label for="email">Email address:</label>
+<input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+</div>
+<div class="form-group">
+<label for="pwd">Password:</label>
+<input type="password" class="form-control" id="pwd" name="pwd" placeholder="Enter password">
+</div>
+<div class="checkbox">
+<label><input type="checkbox"> Remember me</label>
+</div>
+<button type="submit" class="btn btn-default">Submit</button>
+</form>
+{% endblock content %}
