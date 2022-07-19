@@ -1,0 +1,18 @@
+{% extends 'core/index.html' %}
+{% block title %}Add{% endblock title %}
+{% block content %}
+    <h3>Add ToDo</h3>
+    <hr>
+    <form method="POST" >
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="title">Enter the Title</label>
+            <input type="text" class="form-control" id="title" name="title" placeholder="Title">
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark"style="margin-bottom: 20px;margin-top:20px;">Submit</button>
+    </form>
+{%endblock content %}

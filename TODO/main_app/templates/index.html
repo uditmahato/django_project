@@ -1,0 +1,18 @@
+{% extends 'core/index.html' %}
+{% block title %} Home {% endblock title %}
+{% block content %}
+    <hr style="height: 50px;">
+    {%for todo in todos %}
+    <h4>{{ todo.title }}</h4>
+    <p>{{ todo.description }}</p>
+    
+    <small>
+        {{ todo.date_created }}
+        <div>
+            <a href="#">edit</a>
+            <a href="#">delete</a>
+        </div>
+    </small>
+    {% endfor %} 
+    <a href="{% url 'add'%}" class="btn btn-dark" style="margin-top:20px ;margin-bottom: 15px;">ADD</a>
+{% endblock content%}
